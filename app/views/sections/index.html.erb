@@ -8,5 +8,5 @@
 
 <% @sections.each_with_index do |section, i| %>
   <h3>Section <%= i + 1 %></h3>
-  <%= section.heading %>
+  <%= link_to section.heading, section_path(section) %>
 <% end %>
