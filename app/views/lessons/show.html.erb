@@ -1,0 +1,11 @@
+<h2>
+  <%= @lesson.title %> <em>Lesson!</em>
+</h2>
+
+
+<p class='well'>
+  <%= @lesson.content %>
+</p>
+
+<%= link_to "Next", section_lesson_path(@section, @lesson.id + 1) %>
+<%= link_to "Previous", section_lesson_path(@section, @lesson.id - 1) %>
