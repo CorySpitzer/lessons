@@ -7,5 +7,5 @@
   <%= @lesson.content %>
 </p>
 
-<%= link_to "Next", section_lesson_path(@section, @lesson.id + 1) %>
-<%= link_to "Previous", section_lesson_path(@section, @lesson.id - 1) %>
+<%= link_to "Next", section_lesson_path(@section, @lesson.next_valid_id) %>
+<%= link_to "Previous", section_lesson_path(@section, @lesson.previous_valid_id) %>
