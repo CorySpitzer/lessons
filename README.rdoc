@@ -1,5 +1,12 @@
 == README
 
+LearnStuff
+
+A simple app for organizing curriculum
+
+By <a href='https://github.com/CorySpitzer/'>Cory Spitzer</a> and
+  <a href='https://github.com/JessicaEpdx/'>Jessica Engel</a>
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
