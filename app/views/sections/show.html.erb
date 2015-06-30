@@ -4,10 +4,10 @@
 
 
 <% @section.lessons.each_with_index do |lesson, i| %>
-  <div class="lesson">
-  <h3 class='title'><%= lesson.title %></h3>
-  <p class='hidden-content <%= lesson.title %>'>
+  <h3 class='title' data-toggle="collapse" data-target="#<%= lesson.title.split.join %>">
+    <%= lesson.title %>
+  </h3>
+  <div id="<%= lesson.title.split.join %>" class="collapse out">
     <%= lesson.content %>
-  </p>
-</div>
+  </div>
 <% end %>
