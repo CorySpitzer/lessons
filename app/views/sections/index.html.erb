@@ -1,5 +1,12 @@
 <div class="row">
   <div class="col-sm-12">
-    <h1>Sections</h1>
+    <h1>Table of Contents</h1>
   </div>
 </div>
+
+<h2>Sections</h2>
+
+<% @sections.each_with_index do |section, i| %>
+  <h3>Section <%= i %></h3>
+  <%= section.heading %>
+<% end %>
