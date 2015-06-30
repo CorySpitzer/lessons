@@ -5,4 +5,11 @@ describe 'the new section path' do
     visit new_section_path
     expect(page).to have_content "New Section"
   end
+
+  it 'creates a new section' do
+    visit new_section_path
+    fill_in 'section_heading', :with => 'Javascript'
+    click_on 'Create Section'
+    expect(page).to have_content 'Javascript'
+  end
 end
