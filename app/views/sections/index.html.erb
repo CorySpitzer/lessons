@@ -4,11 +4,9 @@
   </div>
 </div>
 
-<h2>Sections</h2>
-
 <% @sections.each_with_index do |section, i| %>
   <div class="col-sm-6 well">
-    <h3>Section <%= i + 1 %></h3>
-    <%= link_to section.heading, section_path(section) %>
+    <h3>Section <%= i + 1 %>: <%= link_to section.heading, section_path(section) %></h3>
+
   </div>
 <% end %>

@@ -3,9 +3,11 @@
 
 
 
-<% @section.lessons.each do |lesson| %>
-  <h3><%= lesson.title %></h3>
-  <p>
+<% @section.lessons.each_with_index do |lesson, i| %>
+  <div class="lesson">
+  <h3 class='title'><%= lesson.title %></h3>
+  <p class='hidden-content <%= lesson.title %>'>
     <%= lesson.content %>
   </p>
+</div>
 <% end %>
