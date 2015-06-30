@@ -1,0 +1,9 @@
+<h1>New Section</h1>
+
+<%= form_for @section do |f| %>
+  <%= f.label "Section Name" %>
+  <%= f.text_field :heading %>
+
+  <%= f.submit :class => 'btn btn-warning'%>
+
+<% end %>

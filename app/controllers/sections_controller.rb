@@ -3,4 +3,8 @@ class SectionsController < ApplicationController
     @sections = Section.all
   end
 
+  def new
+    @section = Section.new()
+  end
+
 end
