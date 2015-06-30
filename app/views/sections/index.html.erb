@@ -7,6 +7,6 @@
 <h2>Sections</h2>
 
 <% @sections.each_with_index do |section, i| %>
-  <h3>Section <%= i %></h3>
+  <h3>Section <%= i + 1 %></h3>
   <%= section.heading %>
 <% end %>
