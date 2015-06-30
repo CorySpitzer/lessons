@@ -18,7 +18,7 @@ class Lesson < ActiveRecord::Base
 
   def previous_valid_id
     if Lesson.all_id.include?(self.id - 1)
-      return id - 1 
+      return id - 1
     else
       return 1
     end
