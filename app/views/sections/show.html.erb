@@ -1,3 +1,11 @@
 <h2><%= @section.heading %> Lessons</h2>
-
 <%= link_to 'Add a lesson', new_section_lesson_path(@section) %>
+
+
+
+<% @section.lessons.each do |lesson| %>
+  <h3><%= lesson.title %></h3>
+  <p>
+    <%= lesson.content %>
+  </p>
+<% end %>
