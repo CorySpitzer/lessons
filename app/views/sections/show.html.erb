@@ -1,4 +1,4 @@
-<h2><%= @section.heading %> Lessons</h2>
+<h2><%= link_to @section.heading + "Lessons", section_lesson_path(@section, 1) %></h2>
 <%= link_to 'Add a lesson', new_section_lesson_path(@section) %>
 
 

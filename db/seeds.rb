@@ -6,4 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-sections = Section.create [ {heading: 'Ruby'}, {heading: 'python'}]
+sections = Section.create [ {heading: 'Ruby'}, {heading: 'Python'}, {heading: 'C'}, {heading: 'French'}]
